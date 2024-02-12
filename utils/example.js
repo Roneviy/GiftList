@@ -8,8 +8,10 @@ const merkleTree = new MerkleTree(niceList);
 // get the root
 const root = merkleTree.getRoot();
 
+console.log(root.length);
+
 // find the proof that norman block is in the list 
-const name = 'Norman Block';
+const name = 'orman Block';
 const index = niceList.findIndex(n => n === name);
 const proof = merkleTree.getProof(index);
 
